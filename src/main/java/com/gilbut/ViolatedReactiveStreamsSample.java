@@ -10,7 +10,7 @@ public class ViolatedReactiveStreamsSample {
                 .subscribe(new Subscriber<Integer>() {
                     @Override
                     public void onSubscribe(Subscription subscription) {
-                        System.out.println("==== onSubscribe: start ====");
+                        System.out.println("==== onSubscribe: start ====-");
                         subscription.request(Long.MAX_VALUE);
                         System.out.println("==== onSubscribe: end ====");
                     }
